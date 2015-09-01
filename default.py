@@ -16,7 +16,7 @@ xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
 
 name = 'AmericaTV'
 li = xbmcgui.ListItem(name, iconImage='http://3.bp.blogspot.com/-0r801iqHYnw/TcDykRRvTiI/AAAAAAAAACc/QM11_i0A6UQ/s1600/15882.jpg')
-url = 'https://www.youtube.com/watch?v=IFcUP8xs27A'
+url = 'https://manifest.googlevideo.com/api/manifest/hls_playlist/id/IFcUP8xs27A.1/itag/94/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/cmbypass/yes/gir/yes/dg_shard/SUZjVVA4eHMyN0EuMQ.94/hls_chunk_host/r6---sn-5ouxa-h8qd.googlevideo.com/pmbypass/yes/gcr/uy/playlist_type/DVR/mm/32/mn/sn-5ouxa-h8qd/ms/lv/mv/m/pl/24/dover/3/upn/Ape4k4j4CPY/keepalive/yes/sver/3/fexp/9405348,9406010,9408206,9408710,9408988,9409069,9415365,9415485,9416023,9416126,9416347,9417707,9417842,9418153,9418199,9418250,9418392,9418448,9419446,9420021/mt/1441151465/ip/167.58.190.155/ipbits/0/expire/1441173122/sparams/ip,ipbits,expire,id,itag,source,requiressl,ratebypass,live,cmbypass,gir,dg_shard,hls_chunk_host,pmbypass,gcr,playlist_type,mm,mn,ms,mv,pl/signature/94CC9D9A915CAC4EDCBE179C301631C82FB31F2C.2E4CBAEA465BEC359EE6E4F3AF518727102E9050/key/dg_yt0/playlist/index.m3u8'
 xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
 
 name = 'C5N'

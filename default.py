@@ -16,7 +16,7 @@ xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
 
 name = 'AmericaTV'
 li = xbmcgui.ListItem(name, iconImage='http://3.bp.blogspot.com/-0r801iqHYnw/TcDykRRvTiI/AAAAAAAAACc/QM11_i0A6UQ/s1600/15882.jpg')
-url = 'http://live-edge01.telecentro.net.ar/live/amrchd-360/playlist.m3u8'
+url = 'https://www.youtube.com/watch?v=IFcUP8xs27A'
 xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
 
 name = 'C5N'

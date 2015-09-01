@@ -3,7 +3,6 @@ import urllib
 import urlparse
 import xbmcgui
 import xbmcplugin
-import script.video.F4mProxy
 
 addon_handle = int(sys.argv[1])
 

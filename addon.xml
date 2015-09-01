@@ -7,6 +7,7 @@
 		<import addon="script.module.simplejson" version="2.0.10"/>
 		<import addon="script.common.plugin.cache" version="0.9.1"/>
 		<import addon="script.module.parsedom" version="0.9.1"/>
+		<import addon="script.video.F4mProxy" version="2.1.7"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>

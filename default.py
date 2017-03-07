@@ -3,7 +3,17 @@ import urllib
 import urlparse
 import xbmcgui
 import xbmcplugin
-
+import addon="xbmc.python" version="2.1.0"
+import addon="script.module.beautifulsoup" version="3.2.1"
+import addon="script.module.simple.downloader" version="0.9.4"
+import addon="script.module.beautifulsoup4" 
+import addon="script.module.simple.downloader" version="0.9.4"
+import addon="script.module.requests" 
+import addon="script.module.httplib2" 
+import addon="script.module.youtube.dl" optional="true"
+import addon="plugin.video.youtube" 
+import addon="script.module.urlresolver" optional="true"
+import addon="script.module.simplejson"    
 addon_handle = int(sys.argv[1])
 
 xbmcplugin.setContent(addon_handle, 'movies')
@@ -11,27 +21,27 @@ xbmc.executebuiltin('Container.SetViewMode(500)') # "Thumbnail" view
 
 name = 'A24'
 li = xbmcgui.ListItem(name, iconImage='https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRW5j4AOslQjTRtcI3AziNw9Cm0loo5DHEntckhdqjSmk1H-LV3DO9UvgED')
-url = 'http://iphone-streaming.ustream.tv/uhls/17916700/streams/live/iphone/playlist.m3u8'
+url = 'https://youtu.be/yZGc05q7ajA'
 xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
 
 name = 'AmericaTV'
 li = xbmcgui.ListItem(name, iconImage='http://3.bp.blogspot.com/-0r801iqHYnw/TcDykRRvTiI/AAAAAAAAACc/QM11_i0A6UQ/s1600/15882.jpg')
-url = 'https://manifest.googlevideo.com/api/manifest/hls_playlist/id/IFcUP8xs27A.1/itag/94/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/cmbypass/yes/gir/yes/dg_shard/SUZjVVA4eHMyN0EuMQ.94/hls_chunk_host/r6---sn-5ouxa-h8qd.googlevideo.com/pmbypass/yes/gcr/uy/playlist_type/DVR/mm/32/mn/sn-5ouxa-h8qd/ms/lv/mv/m/pl/24/dover/3/upn/Ape4k4j4CPY/keepalive/yes/sver/3/fexp/9405348,9406010,9408206,9408710,9408988,9409069,9415365,9415485,9416023,9416126,9416347,9417707,9417842,9418153,9418199,9418250,9418392,9418448,9419446,9420021/mt/1441151465/ip/167.58.190.155/ipbits/0/expire/1441173122/sparams/ip,ipbits,expire,id,itag,source,requiressl,ratebypass,live,cmbypass,gir,dg_shard,hls_chunk_host,pmbypass,gcr,playlist_type,mm,mn,ms,mv,pl/signature/94CC9D9A915CAC4EDCBE179C301631C82FB31F2C.2E4CBAEA465BEC359EE6E4F3AF518727102E9050/key/dg_yt0/playlist/index.m3u8'
+url = 'http://prepublish.f.qaotic.net/epa/ngrp:americatvlive-100056_all/chunklist_b1596000.m3u8|Referer=http://vmf.edge-apps.net'
 xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
 
 name = 'C5N'
 li = xbmcgui.ListItem(name, iconImage='http://www.conexionplena.com/wp-content/uploads/2012/08/C5N-En-vivo.jpg')
-url = 'rtmp://c5n.stweb.tv:1935/c5n/live_media'
+url = 'http://c5n.stweb.tv/c5n/live/playlist.m3u8'
 xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
 
 name = 'Canal 9'
 li = xbmcgui.ListItem(name, iconImage='http://i.imgur.com/7d1x7.jpg')
-url = 'http://dd65nd24m61wg.cloudfront.net/livec9/smil:C9.smil/chunklist_b796000.m3u8'
+url = 'http://158.69.127.19:8000/live/lmorales/dyd/8447.m3u8'
 xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
 
 name = 'El Trece'
 li = xbmcgui.ListItem(name, iconImage='http://2.bp.blogspot.com/__2gkr01rYEc/ShrJZSXYyCI/AAAAAAAAES8/f8_-7Eda770/s320/el_trece_logo_320.jpg')
-url = 'http://live-edge01.telecentro.net.ar/live/13hd-360/playlist.m3u8'
+url = 'http://prepublish.f.qaotic.net/a03/ngrp:el13_live01-100083_all/playlist.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 4.3; Nexus 7 Build/JSS15Q)'
 xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
 
 name = 'Telefe'
@@ -41,12 +51,12 @@ xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
 
 name = 'TN'
 li = xbmcgui.ListItem(name, iconImage='http://laalameda.files.wordpress.com/2012/02/tn.jpg')
-url = 'rtsp://stream.tn.com.ar/live/tnhd1'
+url = 'http://prepublish.f.qaotic.net/b05/ngrp:tn_live01-100083_all/Playlist.m3u8|User-Agent=iPhone'
 xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
 
 name = 'TV Publica'
 li = xbmcgui.ListItem(name, iconImage='http://www.diarioconcordia.com/wp-content/uploads/2012/12/TV-Publica-Canal-7.jpg')
-url = 'http://live-edge01.telecentro.net.ar/live/tvphd-360/playlist.m3u8'
+url = 'http://prepublish.f.qaotic.net/a02/ngrp:c7live01-20034_all/chunklist_b1396000.m3u8|Referer=http://vmf.edge-apps.net'
 xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
 
 name = 'magazine argentina'

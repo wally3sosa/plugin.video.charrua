@@ -1,1 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.uruguaytv" name="uruguaytv Repository" version="1.0" provider-name="wally sosa">
+	<extension point="xbmc.addon.repository" name="uruguaytv Repository">
+		<info compressed="false">https://uruguaytv.000webhostapp.com/index.html/addons.xml</info>
+		<checksum>https://uruguaytv.000webhostapp.com/index.html/addons.xml.md5</checksum>
+		<datadir zip="true">https://uruguaytv.000webhostapp.com/index.html/plugins/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>uruguaytv Repository</summary>
+		<description>uruguaytv Repository</description>
+		<platform>all</platform>
+	</extension>
+</addon>
 

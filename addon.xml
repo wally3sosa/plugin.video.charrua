@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="repository.uruguaytv" name="uruguaytv Repository" version="1.0" provider-name="wally sosa">
 	<extension point="xbmc.addon.repository" name="uruguaytv Repository">
-		<info compressed="false">http://uruguaytv.net23.net/index.html/addon.xml</info>
+		<info compressed="false">http://uruguaytv.net23.net/index.html/addons.xml</info>
 		<checksum>http://uruguaytv.net23.net/index.html/addons.xml.md5</checksum>
 		<datadir zip="true">http://uruguaytv.net23.net/index.html/plugins/</datadir>
 	</extension>
